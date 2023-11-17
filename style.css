@@ -1,7 +1,7 @@
 body {
   max-width: 1200px;
   margin: auto;
-  padding: 0 1em;
+  padding: 1em 1em;
   font-family: 'Quicksand', sans-serif;
   font-size: 1.1em;
 }
@@ -13,7 +13,7 @@ img {
 nav ul {
   display: flex;
   list-style: none;
-  margin-top: 2em;
+  margin-top: 1em;
   margin-bottom: 0;
   margin-left: 0;
   margin-right: 0;
@@ -111,7 +111,7 @@ h1 {
   padding-top: 100%;
 }
 
-.gallery div img {
+.gallery img {
   display: block;
   object-fit: cover;
   width: 100%;
@@ -120,5 +120,36 @@ h1 {
   top: 0;
   left: 0;
   object-position: 50% 25%;
+  cursor: zoom-in;
+  border-radius: 4px;
 }
 
+.gallerytext {
+  height: 3em;
+}
+
+
+#fullpage {
+  display: none;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0 0 0 / 0.7);
+}
+
+#bigimg {
+  display: block;
+  z-index: 9999;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  cursor: zoom-out;
+  margin: auto;
+  border-radius: 8px;
+  filter: drop-shadow(8px 8px 16px rgb(0 0 0 / 0.8));
+}
