@@ -1,0 +1,46 @@
+body {
+  max-width: 900px;
+  margin: auto;
+  padding: 0 1em;
+}
+
+.profile {
+  float: left;
+  max-width: min(300px, 35%);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin-top: 2em;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  gap: 1em;
+  justify-content: center;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul a:hover {
+  color: gray;
+}
+
+.selected {
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+
+h1 {
+  margin-top: 1em;
+  text-align: center;
+  padding: 0;
+}
+
+img + p {
+  margin-top: 10%;
+}
