@@ -17,11 +17,13 @@ window.onload = function() {
     fullPage.style.display = 'none';
     body.style.height = "";
     body.style.overflow = "";
+    bigImg.setAttribute('src', "");
   });
 
   fullPage.addEventListener('click', function() {
     fullPage.style.display = 'none';
     body.style.height = "";
     body.style.overflow = "";
+    bigImg.setAttribute('src', "");
   });
 }
