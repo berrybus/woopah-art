@@ -5,7 +5,6 @@ body {
   font-family: 'Quicksand', sans-serif;
   font-size: 1.1em;
   background-color: #F3E7D7;
-  touch-action: "none";
 }
 
 h1, h2 {

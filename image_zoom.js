@@ -9,18 +9,19 @@ window.onload = function() {
       fullPage.style.display = 'flex';
       bigImg.setAttribute('src', img.getAttribute('src'));
       body.style.height = "100%";
-      body.style.overflowY = "hidden";
+      body.style.overflow = "hidden";
     });
   });
 
   bigImg.addEventListener('click', function() {
     fullPage.style.display = 'none';
     body.style.height = "";
-    body.style.overflowY = "";
-  })
+    body.style.overflow = "";
+  });
+
   fullPage.addEventListener('click', function() {
     fullPage.style.display = 'none';
     body.style.height = "";
-    body.style.overflowY = "";
-  })
+    body.style.overflow = "";
+  });
 }
