@@ -10,6 +10,9 @@ window.onload = function() {
       bigImg.setAttribute('src', img.getAttribute('src'));
       body.style.height = "100%";
       body.style.overflowY = "hidden";
+      document.ontouchmove = function(event) {
+        event.preventDefault();
+      }
     });
   });
 
@@ -17,10 +20,12 @@ window.onload = function() {
     fullPage.style.display = 'none';
     body.style.height = "";
     body.style.overflowY = "";
+    document.ontouchmove = null;
   })
   fullPage.addEventListener('click', function() {
     fullPage.style.display = 'none';
     body.style.height = "";
     body.style.overflowY = "";
+    document.ontouchmove = null;
   })
 }
