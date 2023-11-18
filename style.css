@@ -20,11 +20,6 @@ img {
   max-width: 100%;
 }
 
-a:link {
-  color: #53777A;
-}
-
-
 nav ul {
   display: flex;
   list-style: none;
@@ -39,6 +34,8 @@ nav ul {
 
 hr {
   color: #D24858;
+  /* Safari fix? */
+  appearance: none;
 }
 
 nav a {
