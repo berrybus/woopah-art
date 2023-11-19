@@ -4,7 +4,7 @@ body {
   padding: 1em 0.5em;
   font-family: 'Quicksand', sans-serif;
   font-size: 1.1em;
-  background-color: #F3E7D7;
+  background-color: #FFF7EC;
 }
 
 h1, h2 {
@@ -19,7 +19,6 @@ p {
 img {
   max-width: 100%;
 }
-
 
 nav ul {
   display: flex;
@@ -171,4 +170,13 @@ h1 {
   margin: auto;
   border-radius: 8px;
   filter: drop-shadow(8px 8px 16px rgb(0 0 0 / 0.8));
+}
+
+footer {
+  margin-top: 6em;
+}
+
+footer p {
+  text-align: center;
+  color: #86576a;
 }
