@@ -5,10 +5,8 @@ html {
 body {
   max-width: 1200px;
   margin: auto;
-  /* padding: 1em 0.5em;*/
   font-family: 'Quicksand', sans-serif;
   font-size: 1.1em;
-  /*background-color: #FFF7EC;*/
 }
 
 h1, h2 {
@@ -33,7 +31,8 @@ body > nav {
 
 main {
   margin-top: 1em;
-  padding: 0em 0em 1em 0em;
+  margin-bottom: 1em;
+  padding-bottom: 0.5em;
   background-color: #f2e3db;
   border: 1px solid #d9bfb7;
   border-radius: 4px;
@@ -98,8 +97,9 @@ h1 {
 }
 
 @media only screen and (min-width: 640px) {
-  body {
-    padding: 1em 0.5em;
+  main {
+    padding-left: 1em;
+    padding-right: 1em;
   }
 
   .intro {
