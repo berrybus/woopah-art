@@ -1,10 +1,11 @@
 html {
   background-color: #FFFBF4;
 }
+
 body {
   max-width: 1200px;
   margin: auto;
-  padding: 1em 0.5em;
+  /* padding: 1em 0.5em;*/
   font-family: 'Quicksand', sans-serif;
   font-size: 1.1em;
   /*background-color: #FFF7EC;*/
@@ -24,14 +25,15 @@ img {
 }
 
 body > nav {
+  margin-top: 1em;
   background-color: #e8c5c2;
   border: 2px solid #d9bfb7;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 main {
   margin-top: 1em;
-  padding: 0em 1em 1em 1em;
+  padding: 0em 0em 1em 0em;
   background-color: #f2e3db;
   border: 1px solid #d9bfb7;
   border-radius: 4px;
@@ -86,6 +88,7 @@ h1 {
 
 .intro {
   display: block;
+  border-bottom: 1px solid #d9bfb7;
 }
 
 .intro .profile {
@@ -95,6 +98,10 @@ h1 {
 }
 
 @media only screen and (min-width: 640px) {
+  body {
+    padding: 1em 0.5em;
+  }
+
   .intro {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -131,13 +138,10 @@ h1 {
 
 .gallerynav {
   border-bottom: 1px solid #d9bfb7;
-  margin-left: -1em;
-  margin-right: -1em;
 }
 
 .gallerynav nav ul {
-  margin: 0;
-  padding: 1em 0;
+  margin: 0.5em 0.5em;
   display: flex;
   flex-flow: row wrap;
 }
@@ -147,7 +151,7 @@ h1 {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 0.25em;
   justify-content: center;
-  padding-bottom: 0.5em;
+  padding: 0.5em;
 }
 
 .gallery div {
