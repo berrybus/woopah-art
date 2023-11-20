@@ -57,7 +57,7 @@ hr {
 
 nav a {
   text-decoration: none;
-  color: #D24858;
+  color: maroon;
 }
 
 nav a:hover {
@@ -66,7 +66,7 @@ nav a:hover {
 
 nav a:visited,
 nav a:link {
-  color: #D24858;
+  color: maroon;
 }
 
 .selected {
@@ -129,9 +129,15 @@ h1 {
   font-size: 1.0em;
 }
 
+.gallerynav {
+  border-bottom: 1px solid #d9bfb7;
+  margin-left: -1em;
+  margin-right: -1em;
+}
 
 .gallerynav nav ul {
   margin: 1em auto;
+  padding: 0;
   display: flex;
   flex-flow: row wrap;
 }
