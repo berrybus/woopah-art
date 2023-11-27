@@ -8,12 +8,13 @@ body {
   margin-right: auto;
   /* There is a strange gap at the bottom if I don't put this here */
   margin-bottom: -1em;
+  margin-top: 0;
   font-family: sans-serif;
   background-color: #fdf5df;
   display: flex;
   flex-direction: column;
-  border-radius: 4px;
-  border: 8px solid #2c2d2f;
+  /*border-radius: 4px;
+  border: 8px solid #2c2d2f;*/
 }
 
 h1 {
@@ -33,7 +34,6 @@ h2 {
 
 p {
   color: #553030;
-  margin: 1em 1em;
 }
 
 img {
@@ -117,6 +117,7 @@ hr {
 
 .intro {
   display: block;
+  border-bottom: 1px solid #d9bfb7;
 }
 
 .intro .profile {
@@ -126,6 +127,18 @@ hr {
 }
 
 @media only screen and (min-width: 640px) {
+  main {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+
+  body {
+    margin-top: 1em;
+    border-radius: 4px;
+    border: 8px solid #2c2d2f;
+  }
+
   .intro {
     display: grid;
     grid-template-columns: 1fr 2fr;
