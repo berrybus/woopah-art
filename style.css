@@ -1,21 +1,38 @@
 html {
-  background-color: #FFFBF4;
-}
-body {
-  max-width: 1200px;
-  margin: auto;
-  padding: 1em 0.5em;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 1.1em;
-  /*background-color: #FFF7EC;*/
+  background-color: #5ebec4;
 }
 
-h1, h2 {
-  color: #C4344E; 
+body {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  /* There is a strange gap at the bottom if I don't put this here */
+  margin-bottom: -1em;
+  font-family: sans-serif;
+  background-color: #fdf5df;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  border: 8px solid #2c2d2f;
+}
+
+h1 {
+  background-color: #f26fa7;
+  color: white;
+  font-weight: bold;
+  width: fit-content;
+  text-align: center;
+  padding: 0.25em;
+  border-radius: 4px;
+}
+
+h2 {
+  color: #ae3998;
+  text-align: center;
 }
 
 p {
-  color: maroon;
+  color: #553030;
   margin: 1em 1em;
 }
 
@@ -24,29 +41,42 @@ img {
 }
 
 body > nav {
-  background-color: #e8c5c2;
-  border: 2px solid #d9bfb7;
-  border-radius: 8px;
+  background-color: #f92c85;
+}
+
+body > nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 1em 0;
+  gap: 1em;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+body > nav ul a {
+  text-decoration: none;
+  color: #f0d9e8;
+  font-weight: bold;
+}
+
+body > nav ul a:hover {
+  color: white;
+}
+
+body > nav .selected {
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
 }
 
 main {
   margin-top: 1em;
   padding: 0em 1em 1em 1em;
-  background-color: #f2e3db;
-  border: 1px solid #d9bfb7;
-  border-radius: 4px;
-}
-
-nav ul {
   display: flex;
-  list-style: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-  margin-right: 0;
-  padding: 0.5em 0 0.5em 0;
-  gap: 1em;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
 }
 
 hr {
@@ -55,33 +85,34 @@ hr {
   display: none;
 }
 
-nav a {
-  text-decoration: none;
-  color: maroon;
+.gallerynav nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 1em 0;
+  gap: 1em;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 
-nav a:hover {
+.gallerynav nav a {
+  text-decoration: none;
+  color: #3e6dc8;
+  font-weight: bold;
+}
+
+.gallerynav nav a:hover {
   color: #EA8676;
 }
 
-nav a:visited,
-nav a:link {
-  color: maroon;
+.gallerynav {
+  border-bottom: 1px solid #d9bfb7;
+  width: 100%;
 }
 
-.selected {
+.gallerynav .selected {
   text-decoration: underline;
   text-underline-offset: 0.3em;
-}
-
-h1, h2 {
-  margin-top: 0.5em;
-  text-align: center;
-  padding: 0;
-}
-
-h1 {
-  margin-bottom: 0;
 }
 
 .intro {
@@ -129,25 +160,13 @@ h1 {
   font-size: 1.0em;
 }
 
-.gallerynav {
-  border-bottom: 1px solid #d9bfb7;
-  margin-left: -1em;
-  margin-right: -1em;
-}
-
-.gallerynav nav ul {
-  margin: 0;
-  padding: 1em 0;
-  display: flex;
-  flex-flow: row wrap;
-}
-
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 0.25em;
   justify-content: center;
   padding-bottom: 0.5em;
+  width: 100%;
 }
 
 .gallery div {
@@ -195,7 +214,7 @@ h1 {
 }
 
 footer {
-  margin-top: 6em;
+  margin-bottom: 1em;
 }
 
 footer p {
