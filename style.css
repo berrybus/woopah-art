@@ -128,7 +128,6 @@ hr {
 
 @media only screen and (min-width: 1280px) {
   body {
-    margin-top: 1em;
     border-radius: 4px;
     border: 8px solid #2c2d2f;
   }
@@ -145,6 +144,10 @@ hr {
     grid-template-columns: 1fr 2fr;
     align-items: center;
     gap: 1em;
+  }
+
+  body {
+    margin-top: 1em;
   }
 
   .intro .profile {
