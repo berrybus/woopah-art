@@ -126,17 +126,18 @@ hr {
   margin: auto;
 }
 
-@media only screen and (min-width: 640px) {
-  main {
-    padding-left: 1em;
-    padding-right: 1em;
-  }
-
-
+@media only screen and (min-width: 1280px) {
   body {
     margin-top: 1em;
     border-radius: 4px;
     border: 8px solid #2c2d2f;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  main {
+    padding-left: 1em;
+    padding-right: 1em;
   }
 
   .intro {
