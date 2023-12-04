@@ -34,6 +34,7 @@ h2 {
 
 p {
   color: #553030;
+  font-size: 1.2em;
 }
 
 img {
@@ -180,7 +181,6 @@ hr {
 
 .links div p {
   margin: 0.5em;
-  font-size: 1.0em;
 }
 
 .gallery {
