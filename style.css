@@ -3,6 +3,7 @@
 
 body {
   margin-top: 0;
+  overflow: auto;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -30,8 +31,9 @@ h2 {
 }
 
 p {
-  color: #734c40;
+  color: #654339;
   font-size: 1.25em;
+  line-height: 1.4em;
 }
 
 img {
@@ -72,11 +74,16 @@ body>nav .selected {
 
 main {
   margin-top: 1em;
-  padding: 0em 1em 1em 1em;
-  display: flex;
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+  display: inline-flex;
   flex-direction: column;
   align-items: center;
   flex: 1;
+}
+
+main p {
+  padding: 0 0.5em;
 }
 
 hr {
@@ -140,6 +147,7 @@ hr {
   body {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
+	filter: drop-shadow(4px 4px 8px rgb(0 0 0 / 0.3));
   }
 
   html {
@@ -149,8 +157,8 @@ hr {
 
 @media only screen and (min-width: 640px) {
   main {
-    padding-left: 1em;
-    padding-right: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
   }
 
   .intro {
@@ -192,7 +200,7 @@ hr {
 }
 
 .gallery {
-  display: grid;
+  display: inline-grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 0.25em;
   justify-content: center;
@@ -200,12 +208,7 @@ hr {
   width: 100%;
 }
 
-.fullwidth {
-  width: 100%;
-}
-
 .gallery div {
-  overflow: hidden;
   position: relative;
   padding-top: 100%;
 }
@@ -223,29 +226,18 @@ hr {
   border-radius: 4px;
 }
 
-#fullpage {
-  display: none;
-  position: fixed;
-  align-items: center;
-  justify-content: center;
-  z-index: 9998;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgb(0 0 0 / 0.7);
+.gallery .fullgriditem {
+  padding-top: 0;
+  position: static;
+  grid-column: 1 / -1;
+  border: 3px solid blue;
 }
 
-#bigimg {
-  display: block;
-  z-index: 9999;
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
+.fullgriditem img {
   cursor: zoom-out;
-  margin: auto;
-  border-radius: 8px;
-  filter: drop-shadow(8px 8px 16px rgb(0 0 0 / 0.8));
+  object-fit: contain;
+  position: static;
+  border-radius: 0;
 }
 
 footer {
