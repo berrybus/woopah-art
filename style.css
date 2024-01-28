@@ -30,8 +30,8 @@ h2 {
 }
 
 p {
-  color: #553030;
-  font-size: 1.2em;
+  color: #734c40;
+  font-size: 1.25em;
 }
 
 img {
@@ -157,7 +157,7 @@ hr {
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
-    gap: 1em;
+    gap: 0em;
   }
 
   .intro .profile {
