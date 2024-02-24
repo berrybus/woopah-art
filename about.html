@@ -14,14 +14,25 @@
 <body>
   <nav>
     <div class="nav-container">
-      <div class="nav-logo">
-        <a href="index.html"><img src="images/logo.png" />Woopah</a>
+      <div id="nav-logo">
+        <a class="selected" href="index.html"><img src="images/logo.png" />Woopah</a>
       </div>
-      <div class="nav-items">
+      <div id="nav-items">
+        <a href="index.html">Home</a>
         <a href="digital.html">Gallery</a>
-        <a class="selected" href="random.html">About</a>
+        <a class="selected" href="about.html">About</a>
         <button class="theme-toggle" type="button" data-theme-toggle aria-label="Change to light theme"><i
             class="fa-regular fa-sun"></i></button>
+      </div>
+      <div id="hamburger">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Change to light theme"><i
+            class="fa-regular fa-sun"></i></button>
+        <button id="hamburger-menu"><i class="fa-solid fa-bars"></i></button>
+        <div id="dropdown-menu">
+          <a href="index.html">Home</a>
+          <a href="digital.html">Gallery</a>
+          <a class="selected" href="about.html">About</a>
+        </div>
       </div>
     </div>
   </nav>
@@ -176,7 +187,7 @@
       </p>
   </main>
   </div>
-  <script src="theme_switcher.js"></script>
+  <script src="navbar.js"></script>
 </body>
 
 </html>

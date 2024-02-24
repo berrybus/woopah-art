@@ -7,11 +7,6 @@ window.onload = function () {
 
   imgs.forEach((img, i) => {
     img.addEventListener("click", function () {
-      // let div = img.parentNode;
-      // div.classList.toggle("fullgriditem")
-      // if (div.classList.contains("fullgriditem")) {
-      //   div.scrollIntoView({ behavior: "auto", block: "center", inline: "nearest" });
-      // }
       overlayImg.setAttribute("src", img.getAttribute("src"));
       overlay.style.display = "flex";
       overlayImg.style.display = "block";
@@ -19,12 +14,20 @@ window.onload = function () {
       if (text == null) {
         text = "No description";
       }
-      let dateTimestamp = dates[i % dates.length];
-      let date = new Date(dateTimestamp);
-      text += `, <em>${date.toLocaleDateString()}</em>`;
+      if (img.hasAttribute("override-date")) {
+        text += ", " + img.getAttribute("override-date");
+      } else {
+        let dateTimestamp = dates[i % dates.length];
+        let date = new Date(dateTimestamp);
+        text += `, <em>${date.toLocaleDateString()}</em>`;
+      }
       overlayDesc.innerHTML = text;
-      body.style.overflowY = "";
-      body.style.overflow = "hidden";
+      const mediaQuery = window.matchMedia(
+        "only screen and (min-width: 640px)"
+      );
+      if (mediaQuery.matches) {
+        body.style.overflow = "hidden";
+      }
     });
   });
 

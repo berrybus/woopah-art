@@ -14,14 +14,25 @@
 <body>
   <nav>
     <div class="nav-container">
-      <div class="nav-logo">
+      <div id="nav-logo">
         <a class="selected" href="index.html"><img src="images/logo.png" />Woopah</a>
       </div>
-      <div class="nav-items">
+      <div id="nav-items">
+        <a class="selected" href="index.html">Home</a>
         <a href="digital.html">Gallery</a>
-        <a href="random.html">About</a>
+        <a href="about.html">About</a>
         <button class="theme-toggle" type="button" data-theme-toggle aria-label="Change to light theme"><i
             class="fa-regular fa-sun"></i></button>
+      </div>
+      <div id="hamburger">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Change to light theme"><i
+            class="fa-regular fa-sun"></i></button>
+        <button id="hamburger-menu"><i class="fa-solid fa-bars"></i></button>
+        <div id="dropdown-menu">
+          <a class="selected" href="index.html">Home</a>
+          <a href="digital.html">Gallery</a>
+          <a href="about.html">About</a>
+        </div>
       </div>
     </div>
   </nav>
@@ -53,7 +64,7 @@
       <div><a href="https://www.twitch.tv/rikichii"><i class="fa-brands fa-twitch"></i> Twitch</a></div>
     </section>
   </main>
-  <script src="theme_switcher.js"></script>
+  <script src="navbar.js"></script>
 </body>
 
 </html>

@@ -35,8 +35,6 @@ html {
 
 body {
   margin: 0;
-
-  /* overflow-y: scroll; */
 }
 
 h1 {
@@ -84,19 +82,19 @@ img {
   align-items: center;
 }
 
-.nav-logo a img {
+#nav-logo a img {
   display: inline-block;
   width: 2em;
   vertical-align: center;
 }
 
-.nav-logo a {
+#nav-logo a {
   display: flex;
   align-items: center;
   gap: 4px;
 }
 
-.nav-container div a {
+.nav-container a {
   text-decoration: none;
   color: var(--color-primary-less);
   font-weight: bold;
@@ -107,6 +105,46 @@ img {
 
 .nav-container .selected {
   color: var(--color-primary);
+}
+
+#nav-items {
+  display: none;
+}
+
+#hamburger-menu {
+  width: 1.5em;
+  font-size: 1.5em;
+  background-color: transparent;
+  border: none;
+  color: var(--color-primary-less);
+  cursor: pointer;
+  margin-right: 0.25em;
+}
+
+#dropdown-menu {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  right: 1em;
+  border: 2px solid var(--color-subtle);
+  width: 6em;
+  box-sizing: border-box;
+  gap: 0;
+  border-radius: 4px;
+  background-color: var(--color-bg);
+  filter: drop-shadow(2px 2px 4px rgb(0 0 0 / 0.5));
+  z-index: 10000;
+}
+
+#dropdown-menu a {
+  align-self: stretch;
+  border-bottom: 1px solid var(--color-subtle);
+  padding: 0.5em 1em;
+  margin: 0;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 main {
@@ -211,14 +249,14 @@ main p {
   height: 1.5em;
   text-align: center;
   font-size: 1.5em;
-  top: -0.75em;
-  right: -0.75em;
+  top: 0em;
+  right: 0em;
   z-index: 10000;
   color: #2f2e2e;
   padding: 0.1em;
   border-radius: 50%;
   border: 2px #2f2e2e solid;
-  background-color: rgb(255 255 255 / 0.6)
+  background-color: rgb(255 255 255 / 0.6);
 }
 
 #overlay div {
@@ -276,6 +314,11 @@ main p {
   #overlay button:hover {
     background-color: rgb(255 255 255 / 0.9)
   }
+
+  #hamburger-menu:hover {
+    background-color: var(--color-subtle);
+    border-radius: 4px;
+  }
 }
 
 @media only screen and (min-width: 640px) {
@@ -293,5 +336,18 @@ main p {
 
   #overlay p {
     margin: 1em 2em;
+  }
+  
+  #nav-items {
+    display: flex;
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  #overlay button {
+    top: -0.75em;
+    right: -0.75em;
   }
 }
