@@ -40,7 +40,7 @@
     <div class="text-container">
       <h1>About me</h1>
       <p>
-        Hello here is a page where I will brain dump some random things about myself
+        Hello here is a page where I will brain dump some random things about myself.
       </p>
 
       <h2>Drawing setup</h2>
@@ -182,9 +182,19 @@
       <p>
         So this website was made with all HANDWRITTEN code with zero frameworks.
         I manually wrote the CSS instead of importing bootstrap. I did use
-        StackOverflow for the image expansion Javascript, but I understood the
+        StackOverflow for the image expansion Javascript, but I (more or less) understood the
         code and modified it for my needs.
       </p>
+      <p>
+        Things were going fine and dandy but after a while, I got tired of reinventing the wheel for stuff like
+        hamburger menus on mobile. I also ran into an issue with disabling scrolling on iOS Safari with the overflow:
+        hidden stuff. It turns out preventing scrolling on the image expansion modal is really fricken annoying for some
+        reason, and I could
+        not figure it out without resorting to some complex Javascript. Also, my layout kept shifting when the scrollbar
+        disappeared and reappeared, and I would have to do some manual offset calculations in Javascript to fix that
+        too. And then I realized: wow, people kind of already solved these problems for me with libraries.
+      </p>
+      <p>The next time I'm making a website, I'm just going to use a framework.</p>
   </main>
   </div>
   <script src="navbar.js"></script>

@@ -166,7 +166,7 @@ main p {
 
 .intro .profile {
   display: block;
-  max-width: 60%;
+  max-width: min(90%, 350px);
   margin: auto;
 }
 
@@ -186,6 +186,7 @@ main p {
 
 .links div {
   margin: 0.5em 0;
+  gap: 0.5em;
   display: flex;
   justify-content: center;
 }
@@ -199,6 +200,10 @@ main p {
   border-radius: 4px;
 }
 
+.links .selected {
+  color: var(--color-white) !important;
+  background-color: var(--color-secondary);
+}
 
 .gallery {
   display: grid;
@@ -291,6 +296,12 @@ main p {
   flex-direction: column;
   align-items: center;
   max-width: 1000px;
+  margin: 0 0.5em;
+}
+
+.text-container p {
+  display: block;
+  width: 100%;
 }
 
 @media (hover: hover) {
